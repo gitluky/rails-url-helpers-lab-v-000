@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
     @student = Student.find_by_id(params[:id])
   end
 
-  def active
+  def activate_student
     @student = Student.find_by_id(params[:id])
     @student.toggle_active_status
   end
