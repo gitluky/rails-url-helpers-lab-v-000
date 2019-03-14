@@ -10,6 +10,8 @@ class StudentsController < ApplicationController
   end
 
   def activate
+    @student = Student.find_by_id(params[:id])
+    @student.activate = false
   end
 
 
